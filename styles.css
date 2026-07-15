@@ -1,0 +1,24 @@
+/* Contenedor principal que divide en dos */
+.contenedor-principal {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* Esto hace que las esquinas de la imagen se vean redondeadas */
+}
+
+/* Lado izquierdo: Imagen */
+.imagen-lateral {
+    flex: 1; 
+    overflow: hidden;
+}
+
+/* Lado derecho: Formulario */
+.formulario-lateral {
+    flex: 1; /* Ocupa el 50% */
+    padding: 20px;
+    background-color: #a8cdf2f5;
+}

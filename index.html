@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+</head>
+<body>
+<!-- El contenedor principal envuelve TODO -->
+<div class="contenedor-principal">
+
+ <div class="imagen-lateral">
+<img src="Imagenes/colores.jfif" alt="Imagen de fondo" style="width:100%; height:100%; object-fit:cover;">
+</div>
+
+<!-- Bloque 2: El Formulario (derecha) -->
+    <div class="formulario-lateral">
+
+    <!-- TITULO -->
+    <h1 style="text-align: center;">Registro de la persona Usuaria</h1>
+<form action="/my-handling-form-page" method="post">
+
+    
+<!-- nombre(input type="text") -->
+  <div>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="user_name" required />
+
+  </div>
+
+<!-- apellidos(input type="text") -->
+
+  <div>
+    <label for="apellido">Apellidos:</label>
+    <input type="text" id="apellido" name="user_name" required />
+
+  </div>
+
+<!-- correo(input type="email") -->
+<div>
+    <label for="mail">Correo electrónico:</label>
+    <input type="email" id="mail" name="user_email" required />
+
+  </div>
+
+<!-- descripcion(input type="textea") -->
+<div>
+    <label for="msg">Mensaje:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+
+ <!-- areas de interes (checkboxes) -->
+    <h2>Areas de interes</h2>
+
+    <label><input type="checkbox"/> "Creativida y Arte"</label>
+     <label><input type="checkbox"/> "Intelectuales y Académicos"</label>
+     <label><input type="checkbox"/> "Tecnología y Digital"</label>
+     <label><input type="checkbox"/> "Deportes y Bienestar"</label>
+    <label><input type="checkbox"/>"Comunidad y Social"</label>
+
+
+<!-- contraseña -->
+<div>
+        <label for="pass">Contraseña:</label>
+        <input type="password" id="pass" name="user_password" required>
+
+    </div>
+
+
+
+<!-- boton envio(input type="submit") -->
+<div class="button">
+    <button type="submit">Enviar</button>
+  </div>
+
+
+</body>
+</html>
