@@ -3,10 +3,9 @@
     display: flex;
     width: 90%;
     max-width: 1000px;
-    height: 500px;
     margin: 20px auto;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden; /* Esto hace que las esquinas de la imagen se vean redondeadas */
 }
 
@@ -21,4 +20,67 @@
     flex: 1; /* Ocupa el 50% */
     padding: 20px;
     background-color: #a8cdf2f5;
+}
+/* Espacio a cada checkbox*/
+.checkbox-group div {
+    margin-bottom: 10px; 
+}
+/* Boton*/
+button[type="submit"] {
+    background-color: #0056b3; /* Un color un poco más fuerte */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Los campos se mantengan ordenados */
+.formulario-lateral div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px; /* Da aire entre cada campo */
+    width: 100%; /* Asegura que ocupen el ancho disponible */
+}
+
+
+/* Tipo de letra */
+.formulario-lateral {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Esto cambia la letra */
+    display: flex; /* Iniciamos Flexbox */
+    flex-direction: column; /* Alinea todo en columna */
+    align-items: center; /* ¡Esto centra todo horizontalmente! */
+    text-align: center; /* Asegura que el texto dentro también se vea centrado */
+}
+
+label {
+    font-weight: 700; /*  (Slim) */
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+    
+/* Los CUADROS DE TEXTO */
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+textarea {
+    width: 90%; /* Ajusta el ancho */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 8px; /* ¡Esto redondea los bordes! */
+    background-color: #eef6ff; /* Un tono azul muy claro para el fondo */
+    font-size: 14px;
 }

@@ -46,19 +46,21 @@
 
 <!-- descripcion(input type="textea") -->
 <div>
-    <label for="msg">Mensaje:</label>
+    <label for="msg">Describete en 4 lineas:</label>
     <textarea id="msg" name="user_message"></textarea>
   </div>
 
  <!-- areas de interes (checkboxes) -->
-    <h2>Areas de interes</h2>
+    <h2>Selecciona tus áreas de interés:</h2>
 
-    <label><input type="checkbox"/> "Creativida y Arte"</label>
-     <label><input type="checkbox"/> "Intelectuales y Académicos"</label>
-     <label><input type="checkbox"/> "Tecnología y Digital"</label>
-     <label><input type="checkbox"/> "Deportes y Bienestar"</label>
-    <label><input type="checkbox"/>"Comunidad y Social"</label>
+    <div class="checkbox-group">
 
+    <div><label><input type="checkbox"/> "Creativida y Arte"</label></div>
+     <div><label><input type="checkbox"/> "Intelectuales y Académicos"</label></div>
+     <div><label><input type="checkbox"/> "Tecnología y Digital"</label></div>
+     <div><label><input type="checkbox"/> "Deportes y Bienestar"</label></div>
+    <div><label><input type="checkbox"/>"Comunidad y Social"</label></div>
+</div>
 
 <!-- contraseña -->
 <div>
@@ -71,9 +73,8 @@
 
 <!-- boton envio(input type="submit") -->
 <div class="button">
-    <button type="submit">Enviar</button>
+    <button type="submit">Registrarse</button>
   </div>
-
 
 </body>
 </html>
